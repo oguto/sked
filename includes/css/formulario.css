@@ -1,0 +1,669 @@
+/*
+    Document   : formulario
+    Created on : 30/10/2013, 11:27:57
+    Author     : Administrador
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+
+
+fieldset label p{
+    width: auto;
+    float:  left;
+    padding: 0px 3px;
+    height: 10px;
+    font-size: 14px;
+    font-weight: normal;
+    line-height: 1;
+    text-align: center;
+    color: #10453B;
+    z-index: 1;
+
+}
+
+label{
+    color: #fff;
+    font-weight: bold;
+    margin-top: 10px;
+    text-transform: uppercase;
+
+}
+
+label>b{
+    color: #d9534f;
+    font-style: italic;
+}
+
+
+fieldset>div {
+    background-color:transparent;
+    height: auto;
+    width: 100%;
+    padding: 10px;
+    border-radius: 0px  0px   5px  5px  ;
+    margin-bottom: 10px;
+    float: left;
+    padding-bottom: 10px;
+    text-transform: uppercase;
+
+}
+
+fieldset>div>div{margin-bottom: 10px;}
+
+form p{margin-bottom: 5px;}
+
+.filtroResponsivo {
+
+  background-color: #788ef9;
+    border-radius: 20px;
+    float: left;
+    width: 100%;
+    padding: 20px;
+
+
+}
+.filtroResponsivo .btn{ border-radius: 20px;}
+
+.filtroResponsivo input[type="text"],
+.filtroResponsivo input[type="text"],
+.filtroResponsivo input[type="email"],
+.filtroResponsivo input[type="file"],
+.filtroResponsivo input[type="password"],
+.filtroResponsivo input[type="number"],
+.filtroResponsivo input[type="date"],
+.filtroResponsivo input[type="datetime-local"],
+.filtroResponsivo select,
+.filtroResponsivo .chosen-container,
+.filtroResponsivo .chosen-single{
+  width: 100% !important;
+  height: 35px !important;
+  font-size: 14px !important;
+  font-weight: normal !important;
+  text-align: left !important;
+  background-color: #fff !important;
+  float: left !important;
+  display: block ;
+  color: #000 !important;
+  vertical-align: middle !important;
+  padding-left: 10px !important;
+  border-radius: 20px  !important;
+  border: 0px #788ef9 solid !important;
+  padding: 0 0 0 8px !important;
+  margin-bottom: 10px !important;
+
+}
+
+input[type="text"],
+input[type="email"],
+input[type="file"],
+input[type="password"],
+input[type="number"],
+input[type="date"],
+input[type="datetime-local"],
+textarea{
+    width: 100%;
+    height: 42px;
+    font-size: 14px;
+    font-weight: normal;
+    text-align: left;
+    background-color: #788ef9;
+    float: left;
+    display: block;
+    color: #fff;
+    vertical-align: middle;
+    padding-left: 10px;
+    border-radius: 20px;
+    border: 1px #788ef9 solid;
+    padding: 0 0 0 8px;
+ }
+
+
+
+ .modal input[type="text"],
+ .modal input[type="email"],
+ .modal input[type="file"],
+ .modal input[type="password"],
+ .modal input[type="number"],
+ .modal input[type="date"],
+ .modal input[type="datetime-local"],
+ .modal textarea {
+    width: 100%;
+    height: 42px;
+    font-size: 14px;
+    font-weight: normal;
+    text-align: left;
+    background-color: #d6d4fb;
+    float: left;
+    display: block;
+    color: #8C8C8C;
+    vertical-align: middle;
+    padding-left: 10px;
+    border-radius: 10px;
+    border: 0px #e5e5e5 solid;
+    padding: 0 0 0 8px;
+}
+.modal .chosen-container-single .chosen-single {
+    position: relative;
+    display: block;
+    overflow: hidden;
+    padding: 0 0 0 8px;
+    height: 42px;
+    border: 0px #e5e5e5 solid;
+    border-radius: 10px;
+    background-color:#d6d4fb;
+    color: #8C8C8C;
+    text-decoration: none;
+    white-space: nowrap;
+    line-height: 24px;
+    margin-bottom: 0px;
+}
+
+input[type="submit"]{
+    padding: 8px 12px;
+    height: 35px;
+    font-size: 14px;
+    font-weight: normal;
+    line-height: 1;
+    text-align: center;
+    border-radius: 4px;
+    width: auto;
+    min-width: 180px;
+    margin-right: 5px;
+    margin-left: 0px;
+    margin-bottom: 10px;
+    float: left;
+
+}
+input[type="checkbox"],
+input[type="radio"]{
+    padding: 8px 12px;
+    height:100%;
+    font-size: 14px;
+    font-weight: normal;
+    line-height: 1;
+    text-align: center;
+    border-radius: 04px;
+    width:100%;
+    min-width: 10px;
+    margin-right: 5px;
+    margin-left: 0px;
+    margin-bottom: 10px;
+    float: left;
+
+}
+
+.usuarios
+input[type="checkbox"],
+input[type="radio"]{
+    padding: 8px 12px;
+    font-size: 14px;
+    font-weight: normal;
+    line-height: 1;
+    text-align: center;
+    border-radius: 100px;
+    min-width: 10px;
+    margin-right: 5px;
+    margin-left: 0px;
+    margin-bottom: 10px;
+    float: left !important;
+
+}
+
+input[disabled],input[readonly]{
+   background-color: #ededed;
+   color: #788ef9;
+
+}
+
+
+
+button>p{
+    float: left;
+    font-size: 30px;
+    font-family: "Ionicons";
+}
+
+
+.noPadding{
+    padding-left: 0px;
+}
+
+/*formulário geral*/
+
+
+
+
+input[type="checkbox"]{
+    height: 25px;
+    width: 25px;
+    padding-left: 135px;
+    float:left;
+
+      position: none;
+    margin-top: 4px;
+    margin-left: 5px !important;
+}
+
+input[type="radio"]{
+    height: 25px;
+    width: 15px;
+    padding-left: 135px;
+    float:right;
+}
+
+.panel fieldset{
+    padding: 0px;
+    margin: 0px;
+}
+
+.areaTexto{ width: 100%;
+            min-height: 200px;
+
+}
+.areaTexto p{
+    background-image: none;
+    width: auto;
+    height: 40px;
+    text-align:  left;
+}
+textarea{
+  width: 100%;
+  height: 70px;
+  font-size: 14px;
+  font-weight: normal;
+  text-align: left;
+  background-color: #788ef9;
+  float: left;
+  display: block;
+  color: #fff;
+  vertical-align: middle;
+  padding-left: 10px;
+  border-radius: 20px;
+  border: 1px #788ef9 solid;
+  padding: 0 0 0 8px;
+}
+}
+
+#cadasrtoUser{
+    width: 1000px;
+    margin: 0 auto;
+}
+
+.resposta{
+    width: 97%;
+    background-color:rgba(255,255,255,0.0);
+    height:150px;
+}
+.resposta div{
+    width: 50%;
+    background-color:rgb(255,255,255);
+    height: 100px;
+    border-radius: 4px ;
+    margin-left: 25%;
+    margin-top: 5%;
+    -webkit-box-shadow: 0 3px 9px rgba(0, 0, 0, 0.5);
+
+}
+
+.panel button{
+    border-radius: 5px;
+    float: left;
+    min-width: 38px;
+}
+
+.btn-default{
+ background-image: linear-gradient(#fff,#eee);
+ color:  #31708F;
+
+}
+.btn-default:hover{  background-image: linear-gradient(#eee,#fff);
+
+}
+
+.linhaForm{
+    width:80% ;
+    float: left;
+    border: 0px;
+}
+
+.corpo_login{
+    width: 650px;
+    height: 250px;
+    background-image:linear-gradient(#eee,#fff);
+    margin: 0 auto;
+    box-shadow: 0 3px 9px rgba(0, 0, 0, 0.5);
+    margin-top: 15%;
+
+
+}
+.corpo_login>ul{
+    padding: 50px;
+    width: 100%
+
+}
+
+.corpo_login li{
+    padding: 0px;
+    width: 75%;
+    float:  left;
+    height:  auto;
+    list-style:  none;
+
+
+}
+
+li.botao{
+    width: 24%;
+    float:  right;
+
+}
+
+li.botao>button{
+    width: 100%;
+    height: 80px;
+    background-color: #f7cb1b;
+    background-image: none;
+    color:  #383204;
+    font-size: 20px;
+}
+
+div.login_topo{
+    width: 100%;
+    height: 70px;
+    padding: 0px;
+    background-image: linear-gradient(#333,#666);
+    color: #999;
+    font-size: 20px;
+    line-height: 70px;
+    padding-left: 10px;
+}
+
+
+a[data-parent="#accordion"] b{
+    color:rgb(41, 151, 215);
+    border-radius: 5px;
+
+}
+
+
+
+.botaoForm{
+    background-color: transparent;
+    float: left;
+    clear: both;
+    border-bottom: 0px;
+    padding-bottom: 0px;
+    padding: 0px;
+}
+
+.botaoForm>button, .botaoForm>a.btn{
+    float: right;
+    margin-left: 10px;
+    height: 35px;
+
+}
+
+.mostraForm> span{
+    font-size: 25px;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+a[data-parent="#accordion"]:link.mostraForm{
+    color:#2C726B ;
+    font-size: 18px;
+    line-height: 25px;
+    background-image: linear-gradient(#fff,#eee);
+}
+
+th>.btn{float: right;}
+
+.direita{float: left;}
+
+.esquerda{float: right;}
+
+.chosen-container .chosen-results {
+    overflow-x: none;
+    overflow-y: none;
+
+}
+
+/*Para Formulário Desabilitado*/
+
+form.formDesabilitado input[type="text"],
+form.formDesabilitado input[type="email"],
+form.formDesabilitado input[type="file"],
+form.formDesabilitado input[type="password"],
+form.formDesabilitado input[type="number"],
+form.formDesabilitado input[type="date"],
+form.formDesabilitado input[type="datetime-local"],
+
+form.formDesabilitado ul.chosen-choices,
+form.formDesabilitado a.chosen-single,
+form.formDesabilitado textarea{
+
+    background-color: #EFEFEF!important;
+    border: 1px #EFEFEF solid !important;
+
+ }
+
+ form.formDesabilitado a.search-choice-close,
+ form.formDesabilitado  a.chosen-single>div{
+    display: none!important;
+}
+
+form.formDesabilitado .chosen-disabled {
+    opacity:1 !important;
+    cursor: default;
+}
+
+form.filtro{
+    float: left;
+    width: 100%;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    background-color:transparent;
+    padding-bottom: 0px;
+
+}
+
+.erro{
+
+    border-color: #ae1414 !important;
+}
+
+.col-sm-1 button,.col-sm-2 button{
+
+    margin-left: 0px;
+    width: 100%;
+}
+
+nav .form.filtro button{
+
+    width: 150%;
+}
+
+
+
+
+
+.filtro label{
+    background-color: #000;
+    color: #FFF;
+    float: left;
+ }
+
+ .filtro label{
+    width: 30%;
+    color: #FFF;
+    float: left;
+    height: 35px;
+    font-size: 14px;
+    line-height: 25px;
+    padding: 5px;
+    margin-top: 0px;
+    background-color: #ff9800;
+    border-radius: 5px 0px 0px 5px;
+    text-align: center;
+    font-weight: normal;
+    margin-bottom: 0px;
+ }
+ .filtro .chosen-container{
+    width: 70% !important;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+.filtro p>input{
+    width: 70% !important;
+    font-size: 12px;
+    border-radius: 0px 5px 5px 0px;
+    margin-bottom: 10px;
+
+}
+
+.filtro .chosen-container-single .chosen-single{
+
+     border-radius: 0px 5px 5px 0px;
+
+}
+
+
+ .filtro .col-sm-1,
+ .filtro .col-sm-2,
+ .filtro .col-sm-3,
+ .filtro .col-sm-4,
+ .filtro .col-sm-5
+ .filtro .col-sm-6
+ .filtro .col-sm-7
+ {
+    padding-right: 7px ;
+    padding-left: 7px ;
+}
+
+.leftNulo{
+    margin-left: 0px !important;
+
+    padding-left: 0px !important;
+    padding-top: 0px !important;
+    padding-bottom: 0px !important;
+}
+
+label.error{
+    border-radius: 10px !important;
+    background-color: #ff000096 !important;
+    color: #fff !important;
+    padding-left: 5px;
+    padding-right: 5px;
+    font-size: 10px;
+    line-height: 15px;
+    position: absolute;
+    width: 125px;
+}
+form li.imgForm{
+    width:100%;
+    height: 185px;
+    background-color: #d0d5d8;
+    border-radius: 5px;
+    font-size: 90px;
+    line-height: 190px;
+    text-align: center;
+    margin-bottom: 5px;
+    padding-top: 0px !important;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+
+
+.imputFile input#foto{
+  display: none !important;
+}
+
+/* Aparência que terá o seletor de arquivo */
+.imputFile label {
+  background-color: #3498db;
+  border-radius: 5px;
+  color: #fff;
+  cursor: pointer;
+  padding: 10px;
+  text-align: center;
+  width:100%;
+}
+
+.dropdown-menu form{
+
+     width: 450px;
+
+}
+
+
+.dropdown-menu form label{
+    background-color: #000;
+    color: #FFF;
+    float: left;
+ }
+
+ .dropdown-menu form label{
+    width: 30%;
+    color: #FFF;
+    float: left;
+    height: 35px;
+    font-size: 14px;
+    line-height: 25px;
+    padding: 5px;
+    margin-top: 0px;
+    background-color: #07adef;
+    border-radius: 5px 0px 0px 5px;
+    text-align: center;
+    font-weight: normal;
+    margin-bottom: 0px;
+ }
+
+  .dropdown-menu form input, .dropdown-menu form .chosen-container{
+    width: 70% !important;
+    font-size: 12px;
+    border-radius: 0px 5px 5px 0px;
+    margin-bottom: 10px;
+
+}
+ .dropdown-menu .chosen-container-single .chosen-single{
+    border-radius: 0px 5px 5px 0px;
+    width: 100% !important;
+
+}
+p{
+    margin-bottom: 0px;
+}
+
+.botaoForm { width:250px; margin: 0 auto;
+float: none !important}
+.botaoForm button { min-width:110px;
+   width: 48%;
+    float: left;
+     margin: 1%;
+   border-radius: 20px;
+ background-color: #fff !important;
+color: #000!important}
+.chosen-container-single .chosen-single div b:before {
+    display: block;
+    width: 100%;
+    height: 100%;
+    content: "\f104";
+    font-size: 18px;
+    line-height: 35px;
+    color: #fff;
+}
+
+.filtroResponsivo
+.chosen-container-single .chosen-single div b:before {
+    display: block;
+    width: 100%;
+    height: 100%;
+    content: "\f104";
+    font-size: 18px;
+    line-height: 35px;
+    color: #000;
+}

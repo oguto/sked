@@ -1,0 +1,94 @@
+
+
+
+
+
+.coluna{
+    height: 800px !important;
+    
+}
+
+.tituloStatus{
+    width: 100%;
+    text-align: center;
+    font-size: 15px;
+    padding: 5px;
+    float: left;
+     color: #5f686f;
+     text-transform: uppercase;
+     margin-top: 5px;
+     margin-bottom: 20px;
+     box-shadow: 0px 15px 25px -12px #000000;
+
+
+
+}
+
+.coluna ul.listar{
+
+
+    width: 95%;
+    text-align: left;
+    font-size: 16px;
+    padding: 0px;
+    float: left;
+     box-shadow: 0px 0px 2px #ccc !important;
+     color: #fff;
+     margin-left: 2.5%;
+    margin-bottom: 10px;
+    background-color: #fff;
+
+
+
+
+}
+
+.coluna ul.listar li{
+
+    margin:0px 0px 0px 0px;
+
+    width: 100% !important;
+    padding: 2.5px;
+
+    padding-left:  10px;
+
+
+    
+
+
+}
+
+.tnovo ul.listar{
+    border-left: 5px solid #f54949;
+
+}
+
+
+.tnovo ul.listar li:first-child{
+   background-color: #F8DADA; color:#f54949
+
+
+}
+
+.tprogresso ul.listar{
+    border-left: 5px solid #59b60e;
+
+}
+
+
+.tprogresso ul.listar li:first-child{
+  background-color: #E9FCD9; color:#59b60e
+
+
+}
+
+.tresolvido ul.listar{
+   border-left: 5px solid #0e8cb6;
+
+}
+
+
+.tresolvido ul.listar li:first-child{
+   background-color: #D9EEFC; color:#0e8cb6
+
+}

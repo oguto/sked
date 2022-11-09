@@ -1,0 +1,659 @@
+/* 
+    Document   : icones
+    Created on : 26/10/2013, 11:11:42
+    Author     : Administrador
+    Description:
+        Purpose of the stylesheet follows.
+*/
+@font-face { font-family: "Ionicons"; 
+
+             src: url("../fonts/ionicons.ttf") format("truetype");
+             font-weight: normal;
+             font-style: normal; }
+
+
+.salvar{
+    width: 16px;
+    height: 16px;
+    margin: 0px 5px 0px 5px;
+    float: left;
+    background-image: url(../img/salvar.png);
+}
+.excluir{
+    width: 16px;
+    height: 16px;
+    margin: 0px 5px 0px 5px;
+    float: left;
+    background-image: url(../img/excluir.png);
+}
+
+.restaurar{
+    width: 16px;
+    height: 16px;
+    margin: 0px 5px 0px 5px;
+    float: left;
+    background-image: url(../img/restaurar.png);
+}
+
+
+
+.carregando2{ 
+
+
+    -webkit-animation: spin 1s infinite linear;
+ -moz-animation: spin 1s infinite linear; 
+ -o-animation: spin 1s infinite linear;
+  animation: spin 1s infinite linear; }
+
+@-moz-keyframes spin { 0% { -moz-transform: rotate(0deg); }
+  100% { -moz-transform: rotate(359deg); } }
+@-webkit-keyframes spin { 0% { -webkit-transform: rotate(0deg); }
+  100% { -webkit-transform: rotate(359deg); } }
+@-o-keyframes spin { 0% { -o-transform: rotate(0deg); }
+  100% { -o-transform: rotate(359deg); } }
+@-ms-keyframes spin { 0% { -ms-transform: rotate(0deg); }
+  100% { -ms-transform: rotate(359deg); } }
+@keyframes spin { 0% { transform: rotate(0deg); }
+  100% { transform: rotate(359deg); } }
+
+.cancelar{
+    width: 16px;
+    height: 16px;
+    margin: 0px 5px 0px 5px;
+    float: left;
+    background-image: url(../img/cancelar.png);
+}
+.cancelarPgt{
+    width: 25px;
+    height: 25px;
+    margin: 0px 0px 0px 0px;
+    float: left;
+    background-image: url(../img/cancelarPgt.png);
+}
+
+.local{
+    width: 24px;
+    height: 24px;
+    margin: 5px 5px 5px 5px;
+    float: left;
+    background-image: url(../img/local.png);
+}
+
+.email{
+    width: 24px;
+    height: 24px;
+    margin: 5px 5px 5px 5px;
+    float: left;
+    background-image: url(../img/email.png);
+}
+
+
+
+.inativar{
+    width: 16px;
+    height: 16px;
+    margin: 0px 5px 0px 5px;
+    float: left;
+    background-image: url(../img/bloquear.png);
+}
+.editar{
+    width: 16px;
+    height: 16px;
+    margin: 0px 5px 0px 5px;
+    float: left;
+    background-image: url(../img/editar.png);
+}
+.ver{
+    width: 16px;
+    height: 16px;
+    margin: 0px 5px 0px 5px;
+    float: left;
+    background-image: url(../img/ver.png);
+}
+.ico-atencao{
+    width: 24px;
+    height: 24px;
+    margin: 0px 15px 0px 15px;
+    float: left;
+    background-image: url(../img/atencao.gif);
+}
+.gerar{
+    width: 22px;
+    height: 22px;
+    margin: 0px 2px 0px 2px;
+    float: left;
+    background-image: url(../img/gerarRelatorio.png);
+}
+
+.sair{
+    width: 26px;
+    height: 26px;
+    margin: 19px 5px 0px 5px;
+    float: left;
+    background-image: url(../img/ico_sair.png);
+}
+
+.ajuda{
+    width: 62px;
+    height:62px;
+    margin: 0 auto;
+
+    background-image: url(../img/ajuda.png);
+
+    background-position:  center;
+    background-repeat:  no-repeat;
+}
+.ok{
+    width: 22px;
+    height: 22px;
+    margin: 0px 2px 0px 2px;
+    float: left;
+    background-image: url(../img/ok.png);
+    background-repeat:  no-repeat;
+}
+.adicionar{
+    width: 16px;
+    height: 16px;
+    margin: 0px 5px 0px 5px;
+    float: left;
+    background-image: url(../img/adicionar.png);
+}
+
+
+.buscar{
+    width: 16px;
+    height: 16px;
+    margin: 0px 5px 0px 5px;
+    float: left;
+    background-image: url(../img/buscar.png);
+    background-repeat:  no-repeat;    
+    background-position:  center;
+
+}
+
+.opcoes{
+    width: 16px;
+    height: 16px;
+    margin: 0px 5px 0px 0px;
+    float: left;
+    background-image: url(../img/opcao.png);
+}
+.configuracao{
+    width: 30px;
+    height: 30px;
+    margin: 0px 5px 0px 0px;
+    float: left;
+    background-image: url(../img/config.png);
+    background-size: 80%;
+    background-repeat:  no-repeat;    
+    background-position:  center;
+
+}
+
+.upload{
+    width: 16px;
+    height: 16px;
+    margin: 0px 5px 0px 5px;
+    float: left;
+    background-image: url(../img/upload.png);
+}
+
+.reload{
+    width: 16px;
+    height: 16px;
+    margin: 0px 5px 0px 5px;
+    float: left;
+    background-image: url(../img/reload.png);
+}
+.bloquear{
+    width: 16px;
+    height: 21px;
+    margin: 0px 5px 0px 5px;
+    float: left;
+    background-image:url(../img/desbloquear.png) ;
+    background-repeat:  no-repeat;
+}
+.desbloquear{
+    width: 16px;
+    height: 16px;
+    margin: 0px 5px 0px 5px;
+    float: left;
+    background-image:url(../img/bloqueado.png) ;
+    background-repeat:  no-repeat;
+}
+.pdf{
+    width: 22px;
+    height: 22px;
+    margin: 0px 5px 0px 5px;
+    float: left;
+    background-image: url(../img/pdf.png);
+}
+
+.voltar{
+    width: 25px;
+    height: 25px;
+    margin: 0px 0px 0px 0px;
+    float: left;
+
+    background-image: url(../img/voltar.png);
+}
+.comercial{
+    width: 60px;
+    height: 37px;
+    margin: 5px 5px 5px 5px;
+    float: left;
+    background-image: url(../img/comercial.png);
+    background-position:  center;
+    background-repeat:  no-repeat;
+}
+.compras{
+    width:75px;
+    height: 75px;
+    margin: 0px 0px 0px 0px;
+    float: left;
+    background-image: url(../img/compras.png);
+    background-position:  center;
+    background-repeat:  no-repeat;
+}
+.Rcomercial{
+    width: 50px;
+    height:30px;
+    margin: 0px 0px 0px 0px;
+    float: left;
+    background-image: url(../img/comercial.png);
+    background-position:  center;
+    background-repeat:  no-repeat;
+}
+.financeiro{
+    width: 60px;
+    height: 37px;
+    margin: 5px 5px 5px 5px;
+    float: left;
+    background-image: url(../img/financeiro.png);
+    background-position:  center;
+    background-repeat:  no-repeat;
+}
+.relatorio{
+    width: 60px;
+    height: 37px;
+    margin: 5px 5px 5px 5px;
+    float: left;
+    background-image: url(../img/relatorio.png);
+    background-position:  center;
+    background-repeat:  no-repeat;
+}
+
+.ico-relatorio{
+    width: 24px;
+    height: 24px;
+    margin: 0px 5px 5px 0px;
+    float: left;
+    background-image: url(../img/ico-relatorio.png);
+    background-position:  center;
+    background-repeat:  no-repeat;
+}
+.cadastros{
+    width: 60px;
+    height: 37px;
+    margin: 5px 5px 5px 5px;
+    float: left;
+    background-image: url(../img/cadastros.png);
+    background-position:  center;
+    background-repeat:  no-repeat;
+}
+
+.estoque{
+    width: 62px;
+    height: 62px;
+    border-radius: 100px;
+    margin: 0 auto;
+    background-image: url(../img/estoque.png);
+    background-size:  70%;
+    background-position:  center;
+
+    background-repeat:  no-repeat;
+}
+
+.orc{
+    width: 25px;
+    height: 25px;
+    margin: 0px 5px 0px 0px;
+    float: left;
+    background-image: url(../img/orc.png);
+    background-position:  center;
+    background-repeat:  no-repeat;
+    background-size: 80%;
+}
+.clientes{
+    width: 25px;
+    height: 25px;
+    margin: 0px 5px 5px 5px;
+    float: left;
+    background-image: url(../img/clientes.png);
+    background-position:  center;
+    background-size: 90%;
+    background-repeat:  no-repeat;
+}
+.pessoa{
+    width: 32px;
+    height: 32px;
+    margin: 5px 5px 5px 5px;
+    float: left;
+    background-image: url(../img/pessoas.png);
+    background-position:  center;
+
+    background-repeat:  no-repeat;
+}
+
+.c_receber{
+    width: 25px;
+    height: 25px;
+    margin: 0px 0px 0px 0px;
+    float: left;
+    background-image: url(../img/c_receber.png);
+    background-position:  center;
+    background-repeat:  no-repeat;
+}
+
+
+
+
+.abaixo{
+    width: 24px;
+    height: 24px;
+    margin: 5px 5px 5px 5px;
+    float: left;
+    background-image: url(../img/abaixo.png);
+    background-position:  center;
+
+    background-repeat:  no-repeat;
+}
+
+.acima{
+    width: 24px;
+    height: 24px;
+    margin: 5px 5px 5px 5px;
+    float: left;
+    background-image: url(../img/acima.png);
+    background-position:  center;
+
+    background-repeat:  no-repeat;
+}
+
+
+
+.c_pagar{
+    width: 25px;
+    height: 25px;
+    margin: 0px 0px 0px 0px;
+    float: left;
+    background-image: url(../img/c_pagar.png);
+    background-position:  center;
+
+    background-repeat:  no-repeat;
+}
+.servico{
+    width: 60px;
+    height: 37px;
+    margin: 5px 5px 5px 5px;
+    float: left;
+    background-image: url(../img/servico.png);
+    background-position:  center;
+    background-repeat:  no-repeat;
+}
+
+.crm{
+    width: 62px;
+    height: 62px;
+    margin: 0 auto;
+    border-radius:100px ;
+
+    background-image: url(../img/crm.png);
+
+    background-position:  center;
+    background-repeat:  no-repeat;
+}
+.cms{
+    width: 75px;
+    height: 75px;
+    margin: 0px 0px 0px 0px;
+    border-radius:100px ;
+    float: left;
+    background-image: url(../img/cms.png);
+    background-position:  center;
+    background-repeat:  no-repeat;
+}
+.home{
+    width: 52px;
+    height: 62px;
+    margin: 0 auto;
+
+    background-image: url(../img/home.png);
+
+    background-position:  center;
+    background-repeat:  no-repeat;
+}
+
+.agendar{
+    width: 20px;
+    height: 20px;
+    margin: 3px 3px 3px 3px;
+    float: left;
+    background-image: url(../img/agendar.png);
+    background-position:  center;
+    background-repeat:  no-repeat;
+}
+.barcode{
+    width: 16px;
+    height:16px;
+    margin: 3px 3px 3px 3px;
+    float: left;
+    background-image: url(../img/barcode.png);
+    background-position:  center;
+    background-repeat:  no-repeat;
+}
+
+.historico{
+    width: 20px;
+    height: 20px;
+    margin: 3px 3px 3px 3px;
+    float: left;
+    background-image: url(../img/historico.png);
+    background-position:  center;
+    background-repeat:  no-repeat;
+}
+
+.folha{
+    width: 16px;
+    height: 16px;
+    margin: 5px 5px 5px 5px;
+    float: left;
+    background-image: url(../img/folha.png);
+    background-position:  center;
+    background-repeat:  no-repeat;
+}
+
+.faturamento{
+    width: 20px;
+    height: 20px;
+    margin: 5px 5px 5px 5px;
+    float: left;
+    background-image: url(../img/faturamento.png);
+    background-position:  center;
+    background-repeat:  no-repeat;
+}
+
+.campanha{
+    width: 30px;
+    height: 20px;
+    margin: 5px 5px 5px 5px;
+    float: left;
+    background-image: url(../img/campanha.png);
+    background-position:  center;
+    background-repeat:  no-repeat;
+    background-size: 100%;
+}
+
+.minehome{
+    width: 16px;
+    height: 16px;
+    margin: 5px 5px 5px 5px;
+    float: left;
+    background-image: url(../img/minehome.png);
+    background-position:  center;
+    background-repeat:  no-repeat;
+}
+
+.caret{margin-top: 5px; }
+/****icos****/
+
+.ico-mail{
+    width: 16px;
+    height: 16px;
+    margin: 3px 3px 3px 3px;
+    float: right;
+    background-image: url(../img/ico-mail.png);
+    background-repeat:  no-repeat;
+}
+.ico-tel{
+    width: 16px;
+    height: 16px;
+    margin: 3px 3px 3px 3px;
+    float: right;
+    background-image: url(../img/ico-tel.png);
+    background-repeat:  no-repeat;
+}
+
+.ico-visit{
+    width: 16px;
+    height: 16px;
+    margin: 3px 3px 3px 3px;
+    float: right;
+    background-image: url(../img/ico-visit.png);
+    background-repeat:  no-repeat;
+}
+.ico-barcode{
+    width: 16px;
+    height:16px;
+    margin: 3px 3px 3px 3px;
+    float: right;
+    background-image: url(../img/barcode.png);
+    background-position:  center;
+    background-repeat:  no-repeat;
+}
+.ico-StatusEfetivo{
+    background-color: #f7cb1b;
+    border-radius: 5px;
+    height: 18px;
+    width: 18px;
+
+    float:  left;
+}
+.ico-StatusPotencial{
+    background-color:  #CCC;
+    border-radius: 5px;
+    height: 18px;
+    width: 18px;
+
+    float:  left;
+}
+.div-legend{ 
+    float:  left;
+    width: auto;
+    margin-right: 20px;
+    color:  #888;
+}
+
+.div-legend p{ margin-right: 10px;}
+
+/*status*/
+.ico-cancelado{
+    background-color: #A9A9A9;
+    border-radius: 5px;
+    height: 18px;
+    width: 18px;
+
+    float:  left;
+}
+.ico-atrasado{
+    background-color: #AA0000;
+    border-radius: 5px;
+    height: 18px;
+    width: 18px;
+
+    float:  left;
+}
+
+.ico-pago{
+    background-color: #09f;
+    border-radius: 5px;
+    height: 18px;
+    width: 18px;
+
+    float:  left;
+}
+
+.ico-aberto{
+    background-color: #f7cb1b;
+    border-radius: 5px;
+    height: 18px;
+    width: 18px;
+
+    float:  left;
+}
+
+.ico-orcamento{
+    width: 16px;
+    height: 16px;
+    margin: 3px 3px 3px 3px;
+    float: right;
+    background-image: url(../img/orcamento.png);
+}
+.suporte{
+    width: 60px;
+    height: 37px;
+    margin: 5px 5px 5px 5px;
+    float: left;
+    background-image: url(../img/suporte.png);
+    background-position:  center;
+
+    background-repeat:  no-repeat;
+}
+.acao{
+    float:right;
+    border: 0px #DDD dashed;
+    padding: 0px;
+    margin-top: 0px;
+    border-bottom: 0px;
+    border-right: 0px;
+    border-radius:6px 0px 0px 0px;
+    min-width: 250px;
+
+
+}
+
+
+.acao li{
+    float: left;
+    min-width: 40px;
+    height: 20px;
+    border-bottom: 0px; 
+    border-radius: 5px;
+    background-position: left;
+    background-size: auto;
+    color: #AAA;
+    margin-left: 5px;
+    background-repeat:  no-repeat;
+    font-size: 10.5px;
+    font-family: Ionicons;
+    line-height: 20px;
+
+}
+
+.acao li>p{
+    float:left;
+    color: #B4C8D5;
+    font-size: 20px;
+    margin-right: 0px;
+
+}

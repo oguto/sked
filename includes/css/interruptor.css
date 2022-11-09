@@ -1,0 +1,196 @@
+
+
+/*****************************************************
+* CONFIGURAÇÃO DO BOTÃO INTERRUPTOR
+******************************************************
+*/
+
+
+/**
+ * Elemento que engloba todo o botão
+ * Define a largura (width) e altura(height);
+ * Centraliza na horizontal;
+ * Define position:relative, delimitando o espaço
+ * dos elementos filhos que utilizar position:absolute;
+**/
+.switch{
+  width:145px;
+  height:25px;
+  position:relative;
+  float: right;
+  box-shadow: 0px 1px 5px #CCC;   
+}
+
+/**
+ * Configuração do Input
+ * Alterar para display:block, para ocupar todo o espaço
+ * definido pelo elemento Pai
+ * Define a largura (width) e altura(height)
+ * Define position:absolute
+ * Define top e left zero.
+ * Define z-index:10 para sobrepor a todos os elementos
+ * Define opacity:0 para ocultar
+ * Define cursos:pointer, para aparecer cursor de link
+ */
+.switch input{
+  display:block;
+  width:100%;
+  height: 100%;
+  border: 0px;
+  position:absolute;    
+  top:0;
+  left:0;
+  z-index: 10;
+  opacity: 0;
+  cursor: pointer;    
+}
+
+/**
+ * Configuração do Label, que será o espaço interno do botão
+ * Alterar para display:block, para ocupar todo o espaço
+ * definido pelo elemento Pai;
+ * Define a largura (width) e altura(height); 
+ * Define um background gradiente (linear), utilizamos
+ * os prefixos pra funcionar nos navegadores;
+ * Define os cantos arredondados
+ *
+**/
+.switch label{
+  display: block;
+  width: 100%;
+  height: 100%;
+  background-color:#64C88D;
+  border-radius: 2px; 
+  border: 0px; 
+  margin-top: 0px; 
+  }
+
+/**
+* Iremos adicionar um elemento depois do label, para o efeito da borda.
+* Adiciona um conteudo vazio com content;
+* Define position:abolute;
+* Define top, left, right, bottom -10px, pra definir espessura da borda
+* Define z-index:-1, para ficar atrás de todos os elementos
+* Define um background gradiente linear
+* Define border-radius: inherit;, pra utilizar a configuração do elemento pai,
+* que no caso será 40px
+*/
+.switch label:after{
+  content: "";    
+  position: absolute;   
+  top: -2px; 
+  right: -2px; 
+  bottom: -2px; 
+  left: -2px;
+  z-index: -5;  
+  border-radius: inherit;
+    
+}
+/**
+ * Configuração o elemento span, para o efeito do interruptor.
+ * Alteração do display pra block, pra definimos altura e largura ;
+ * Define largura (width) e altura (height);
+ * Define position:absolute, para posicionar de acordo com elemento pai;
+ * Define o z-index:2 pra sobre a borda do botão;
+ * Define um background gradiente linear;
+ * Define border-radius: inherit;, pra utilizar a configuração do elemento pai,
+ * que no caso será 40px
+**/
+
+.switch label span{
+  display: block;
+  width: 50%; 
+  height: 100%;  
+  background: #EFEFEF;
+  position: absolute;
+  z-index: 2;
+  right: 51%;
+  top: 0;  
+  border-radius: inherit;
+  text-transform: uppercase;
+  font-weight: bold;  
+  font-family: Arial, sans-serif;
+  font-size: 10px;
+  text-align: center;
+  line-height: 25px;
+  
+}
+
+/**
+* Configurar o item do centro do interruptor.
+* Adiciona um conteúdo vazio com content;
+* Define um position:absolute, para posicionar esse elemento;
+* Define as dimensões (largura e altura) do centro do interruptor
+* Define um background gradiente (linear);
+* Define border-radius: inherit;, pra utilizar a configuração do elemento pai,
+* que no caso será 40px;
+*/
+
+.switch label span:after {
+  
+  position: absolute;
+  left: 1%;
+  top: 25%;  
+  width: 50%;
+  height: 50%;  
+}
+
+/**
+* Vamos adicionar texto dentro do botão quando estiver desligado.
+* Usando a pseudo-classe before, adicionando antes do span
+* Adiciona o texto off
+* Define o position:absolute, posicionar o elemento;
+* Define que fique 50% do topo;
+* Define o margin-top:-12px para centralizar na vertical;
+* Define que fique -50% para direita;
+* Define que ficar letra em maiusculo;
+* Define a fonte em negrito;
+* Define a familia da fonte como Arial;
+* Define o tamanho da fonte como 24px;
+* Define a cor do texto branca;
+*/
+.switch label span:before {
+  content: "presente";  
+  position: absolute;
+  top: 50%;
+  margin-top: -12px;
+  right: -90%;
+  line-height: 25px;
+  text-transform: uppercase;
+  font-weight: bold;  
+  font-family: Arial, sans-serif;
+  font-size: 10px;
+  
+  color: #fff; 
+ 
+}
+
+/**
+* Configura a cor do elemento quando desligar o botão,
+* por padrão ele começa ligado, com a cor verde
+* Define o background gradiente linear (cor vermelha)
+*/
+.switch input:checked ~ label { 
+
+  background-color: #F54D4D;
+
+}
+
+/**
+* Afasta interruptor pra direita, efeito desligado
+*/
+.switch input:checked ~ label span{
+  right: -2px;
+}
+
+/**
+* Adiciona conteudo On, pra mostra quando desligado
+*/
+.switch input:checked ~ label span:before {
+  content: "ausente";
+  right: 120%;
+  font-size: 10px;
+  line-height: 25px;
+  
+}
+

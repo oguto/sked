@@ -1,0 +1,70 @@
+.calendario .dias{
+
+	min-height: 150px;
+	border-right: 1px solid #ccc;
+	max-width: 190.5px;
+	padding: 1px !important;
+
+
+}
+
+.calendario .dias p{
+	display: block;
+	padding: 2px;
+	width: 90%;
+	margin: 5px;
+	margin-top: 0px;
+	font-size: 10px;
+	text-transform: uppercase;
+	border-radius: 4px;
+	float: left;
+
+
+}
+
+.calendario strong{
+	display: block;
+	background-color: #fff;
+	margin: -1px -1px 5px -1px;
+	border-radius: 0px 0px 5px 0px;
+	padding: 5px;
+	border: 1px solid #ccc;
+	width: 40px;
+	text-align: center;
+	border-top: 0px;
+	border-left: 0px;
+
+
+}
+.calendario strong.hoje{
+
+	background-color: #2785ef;
+		color: #fff;
+		border-color: #2785ef;
+
+	
+
+
+}
+
+.calendario .dias .status-1{
+	color: #f54949;
+	border:1px solid #f54949;
+	background-color: #F8DADA;
+	cursor: pointer;
+}
+
+.calendario .dias .status-2{
+
+	color: #59b60e;
+	border:1px solid #59b60e;
+	background-color: #E9FCD9;
+	cursor: pointer;
+}
+
+.calendario .dias .status-3{
+	color: #0e8cb6;
+	border:1px solid #0e8cb6;
+	background-color: #D9EEFC;
+	cursor: pointer;
+}

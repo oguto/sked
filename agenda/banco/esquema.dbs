@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<project name="AgendaSalao" id="Project_13a9" database="MySql" >
+	<schema name="agendasalao" >
+		<table name="produto" prior="usuario_0" >
+			<column name="id" type="int" jt="4" mandatory="y" >
+				<identity><![CDATA[AUTO_INCREMENT]]></identity>
+				<comment><![CDATA[D]]></comment>
+			</column>
+			<column name="data" type="datetime" jt="93" />
+			<column name="admin" type="int" jt="4" />
+			<column name="exclusao" type="datetime" jt="93" />
+			<index name="pk_tbl_id_0" unique="PRIMARY_KEY" >
+				<column name="id" />
+			</index>
+		</table>
+		<table name="servico" prior="produto_0" >
+			<column name="id" type="int" jt="4" mandatory="y" >
+				<identity><![CDATA[AUTO_INCREMENT]]></identity>
+				<comment><![CDATA[D]]></comment>
+			</column>
+			<column name="data" type="datetime" jt="93" />
+			<column name="admin" type="int" jt="4" />
+			<column name="exclusao" type="datetime" jt="93" />
+			<index name="pk_tbl_id_1" unique="PRIMARY_KEY" >
+				<column name="id" />
+			</index>
+		</table>
+		<table name="transacao" prior="produto_0" >
+			<column name="id" type="int" jt="4" mandatory="y" >
+				<identity><![CDATA[AUTO_INCREMENT]]></identity>
+				<comment><![CDATA[D]]></comment>
+			</column>
+			<column name="id_tipo" type="int" jt="4" mandatory="y" />
+			<column name="data" type="datetime" jt="93" />
+			<column name="admin" type="int" jt="4" />
+			<column name="exclusao" type="datetime" jt="93" />
+			<index name="pk_tbl_id_2" unique="PRIMARY_KEY" >
+				<column name="id" />
+			</index>
+			<index name="unq_transacao_id_tipo" unique="UNIQUE_KEY" >
+				<column name="id_tipo" />
+			</index>
+		</table>
+		<table name="transacao_tipo" prior="transacao_0" >
+			<column name="id" type="int" jt="4" mandatory="y" >
+				<identity><![CDATA[AUTO_INCREMENT]]></identity>
+				<comment><![CDATA[D]]></comment>
+			</column>
+			<column name="data" type="datetime" jt="93" />
+			<column name="admin" type="int" jt="4" />
+			<column name="exclusao" type="datetime" jt="93" />
+			<index name="pk_tbl_id_3" unique="PRIMARY_KEY" >
+				<column name="id" />
+			</index>
+			<fk name="fk_transacao_tipo_transacao" to_schema="agendasalao" to_table="transacao" >
+				<fk_column name="id" pk="id_tipo" />
+			</fk>
+		</table>
+		<table name="usuario" prior="tbl" >
+			<column name="id" type="int" jt="4" mandatory="y" >
+				<identity><![CDATA[AUTO_INCREMENT]]></identity>
+			</column>
+			<column name="id_tipo" type="int" jt="4" />
+			<column name="nome" type="long varchar" jt="-1" />
+			<column name="nascimento" type="date" jt="91" />
+			<column name="cpf" type="long varchar" jt="-1" />
+			<column name="telefone" type="long varchar" jt="-1" />
+			<column name="cep" type="int" jt="4" />
+			<column name="numero" type="int" jt="4" />
+			<column name="endereco" type="longtext" jt="-1" />
+			<column name="responsavel" type="longtext" jt="-1" />
+			<column name="contato_responsavel" type="longtext" jt="-1" />
+			<column name="comissao" type="int" jt="4" />
+			<column name="data" type="datetime" jt="93" />
+			<column name="admin" type="int" jt="4" />
+			<column name="exclusao" type="datetime" jt="93" />
+			<index name="pk_tbl_id" unique="PRIMARY_KEY" >
+				<column name="id" />
+			</index>
+			<index name="unq_usuario_id_tipo" unique="UNIQUE_KEY" >
+				<column name="id_tipo" />
+			</index>
+			<options><![CDATA[engine=InnoDB]]></options>
+		</table>
+		<table name="usuario_tipo" prior="servico_0" >
+			<column name="id" type="int" jt="4" mandatory="y" >
+				<identity><![CDATA[AUTO_INCREMENT]]></identity>
+				<comment><![CDATA[D]]></comment>
+			</column>
+			<column name="data" type="datetime" jt="93" />
+			<column name="admin" type="int" jt="4" />
+			<column name="exclusao" type="datetime" jt="93" />
+			<column name="nome" type="char" length="230" jt="1" />
+			<index name="pk_tbl_id_4" unique="PRIMARY_KEY" >
+				<column name="id" />
+			</index>
+			<fk name="fk_usuario_tipo_usuario" to_schema="agendasalao" to_table="usuario" >
+				<fk_column name="id" pk="id_tipo" />
+			</fk>
+		</table>
+	</schema>
+	<layout name="Default Layout" id="Layout_60d" show_relation="columns" >
+		<entity schema="agendasalao" name="produto" color="3986C1" x="208" y="48" />
+		<entity schema="agendasalao" name="servico" color="3986C1" x="48" y="48" />
+		<entity schema="agendasalao" name="transacao" color="3986C1" x="208" y="336" />
+		<entity schema="agendasalao" name="transacao_tipo" color="3986C1" x="400" y="320" />
+		<entity schema="agendasalao" name="usuario" color="C1D8EE" x="608" y="96" />
+		<entity schema="agendasalao" name="usuario_tipo" color="3986C1" x="896" y="176" />
+	</layout>
+</project>

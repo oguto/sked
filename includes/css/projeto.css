@@ -1,0 +1,147 @@
+.projeto .listar{
+    margin: 0px;
+    padding: 0px;
+    width: 100%;
+    float: left;
+}
+
+.projeto .listar>li{
+    float: left;
+    width: 75%;
+    font-size: 13px;
+    color: #777;
+    padding-right:  10px;
+  
+}
+
+.projeto .listar>li:first-child{
+    float: left;
+    font-size: 17px;
+    color: #18466F;
+    width:60px ;
+}
+
+.projeto .listar>li:nth-child(2){   
+    color: #02213C;
+}
+
+.projeto .listar>li>i:first-child{   
+    color: #7E9CB5;
+}
+
+
+.projeto .listar div{
+    width: 90%;
+    float:left;
+}
+
+.ver{
+    margin: 0px;
+    padding: 0px !important;
+    width: 100%;
+}
+
+.ver>li{
+    float: left;
+    width: auto;
+    margin:-35px 0px 0px 70px;
+    font-size: 13px;
+    color: #777;
+}
+
+.ver>li:first-child{
+    float: left;
+    width: auto;
+    margin:0px 15px 6px 0px;
+    font-size: 17px;
+    color: #18466F;
+    width: 100%;
+}
+
+.ver>li>i:first-child{   
+    color: #7E9CB5;
+    margin-right: 5px;  
+}
+
+.ver div{
+    width: 90%;
+    float:left;
+}
+
+.progress{
+    width: 100% !important;
+    float: left!important;
+}
+.porcentagem{
+    background-color: #d9dee4;
+    padding: 0 0 0 0 !important;
+    height: 20px !important;
+
+}
+.coluna, .coluna .listar li:nth-child(2){
+    overflow: auto;
+}
+
+.coluna .listar li:nth-child(2){
+    max-height: 90px;
+    padding:  10px;
+    color: #808487;
+}
+
+.coluna::-webkit-scrollbar{
+    width: 3px;
+}
+ 
+/* Track */
+.coluna::-webkit-scrollbar-track{
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3); 
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+}
+ 
+/* Handle */
+.coluna::-webkit-scrollbar-thumb{
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+    background: #00d4aa; 
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5); 
+}
+.coluna::-webkit-scrollbar-thumb:window-inactive{
+    background:#00d4aa; 
+}
+
+.coluna .listar li::-webkit-scrollbar{
+    width: 3px;
+}
+ 
+/* Track */
+.coluna .listar li::-webkit-scrollbar-track{
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3); 
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+}
+ 
+/* Handle */
+.coluna .listar li::-webkit-scrollbar-thumb{
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+    background: #00d4aa; 
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5); 
+}
+.coluna .listar li::-webkit-scrollbar-thumb:window-inactive{
+    background:#00d4aa; 
+}
+.corprojeto{
+
+    width: 60px;
+    height: 60px;
+    float: left;
+    border-radius: 100px;
+    text-align: center;
+    color: #fff;
+    padding: 10px;  
+    font-size: 9px;
+    text-transform: uppercase;
+}
+
+

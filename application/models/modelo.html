@@ -1,0 +1,138 @@
+<?php
+
+class Modelo_Model extends CI_Model {
+
+
+    public function __construct() {
+
+        parent::__construct();
+
+
+    }
+
+    function dados($dados = array()) {
+
+        $array = array();
+
+        $array['id'] = null;
+
+        $array['admin'] = $this->usuario->verAdmin();
+
+        $array['exclusao'] = null;
+
+        foreach ($array as $key => $value) {
+
+             if(isset($dados[$key])){
+
+                 $array[$key]=$dados[$key];
+
+             } else{
+
+               if(is_null($array[$key])){
+
+                   $array[$key] = null;
+
+                }               
+              }
+
+         }
+
+
+         return $array;
+    }
+
+
+    function incluir($dados) {
+
+        $dados=array_filter($this->dados($dados));
+
+        $this->db->insert("TB", $dados);
+
+        return $this->db->insert_id();;
+    }
+
+    function editar($dados) {
+
+        $dados = array_filter($this->dados($dados));
+
+        $this->db->where('TB.id', $dados['id']);
+
+        $this->db->where('TB.exclusao is null');
+
+        $this->banco->usuario("TB");
+
+        $this->db->update("TB", $dados);
+    }
+
+
+    function listar($maximo = NULL, $inicio = NULL) {
+
+        $this->db->from("TB");
+
+        $this->db->where('TB.exclusao is null');
+
+        $this->banco->usuario("TB");
+
+        $query = $this->db->get("", $maximo, $inicio);
+       
+        return $query->result_array();
+    }
+
+     function filtrar($filtro,$maximo = NULL, $inicio = NULL){
+
+        $this->db->from("TB");
+
+        $this->db->where($filtro);
+
+        $this->banco->usuario("TB");
+
+        $query = $this->db->get("", $maximo, $inicio);         
+
+        return $query->result_array();
+
+    }
+
+
+    function ver($id) {
+
+        $this->db->from("TB");
+
+        $this->db->where('TB.id', $id);
+
+        $this->db->where('TB.exclusao is null');
+
+        $this->banco->usuario("TB");
+
+        $query = $this->db->get();
+
+        return $query->row_array();
+    }
+
+
+  function excluir($id) {
+
+        $dados = array();
+
+        $this->db->where('TB.id', $id);
+
+        $this->banco->usuario("TB");
+
+        $dados['exclusao']=date("Y-m-d");
+
+        $this->db->update("TB",$dados);
+
+    }
+
+    function deletar($id) {
+
+        $this->db->where('TB.id', $id);
+
+        $this->db->where('TB.exclusao not null');
+
+        $this->banco->usuario("TB");
+
+        $this->db->delete("TB");
+
+    }
+
+}

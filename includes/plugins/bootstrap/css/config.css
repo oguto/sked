@@ -1,0 +1,107 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 11/07/2014, 16:00:06
+    Author     : Gustavo
+*/
+
+.datePk{
+    background-image: url('../img/calendario.png');
+    background-position:  center right;
+    background-repeat: no-repeat;
+}
+//icones
+.adc{
+    background-image: url('../img/add.png');
+    background-position:  center left;
+    background-repeat: no-repeat;
+    padding-left: 30px;
+}
+.ver{
+    background-image: url('../img/ver.png');
+    background-position:  center left;
+    background-repeat: no-repeat;
+    padding-left: 30px;
+}
+.gerar{
+    background-image: url('../img/gerar.png');
+    background-position:  center left;
+    background-repeat: no-repeat;
+    padding-left: 30px;
+}
+.excluir{
+    background-image: url('../img/excluir.png');
+    background-position:  center left;
+    background-repeat: no-repeat;
+    padding-left: 30px;
+
+}
+.editar{
+    background-image: url('../img/editar.png');
+    background-position:  center left;
+    background-repeat: no-repeat;
+    padding-left: 30px;
+
+}
+.cancelar{
+    background-image: url('../img/cancelar.png');
+    background-position:  center left;
+    background-repeat: no-repeat;
+    width: 25px;
+    height: 25px;
+
+}
+
+.load{
+    background-image: url('../img/loader.gif');
+    background-position:  center left;
+    background-repeat: no-repeat;
+    width: 50px;
+    height: 25px;
+    margin:  0 auto;
+
+}
+.modal-dialog{width: 1000px;}
+.modal-header{
+    background-color:  #006dcc;
+    height: 40px;
+    border-radius: 5px 5px 0px 0px;
+    padding: 5px;
+}
+.navbar-inverse{
+    background-color: #062f54; 
+
+}
+
+.navbar-header a{
+    color: #bd1c22;
+    font-size: 24px;
+}
+.table{
+    margin-top: 25px;
+}
+.table thead{
+    background-image: linear-gradient(#fff,#eee);
+}
+.table tr{
+    background-image: linear-gradient(#fff,#eee);
+}
+
+.table tbody>tr:hover{
+    background-color: #d6e9fa;
+     background-image: none;
+}
+#contModal span{
+   
+    margin-left: 20px;
+}
+.modal-content{
+    margin-bottom: 200px;
+}
+form button.btn{margin-left: 18px;
+}
+form legend{margin-left: 18px;
+}
